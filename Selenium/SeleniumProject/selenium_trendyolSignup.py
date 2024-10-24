@@ -25,9 +25,7 @@ def sendkey(find,args):
 def clickID(find):
     findedID=findId(find)
     findedID.click()
-
-
-
+#--------------------------------------------
 def findXpath(findXpath):
     findedXpath=driver.find_element(By.XPATH, findXpath)
     return findedXpath
@@ -35,8 +33,7 @@ def findXpath(findXpath):
 def clickXpath(findx):
     findedXpath=findXpath(findx)
     findedXpath.click()
-
-
+#--------------------------------------------
 def findName(findName):
     findedn=driver.find_element(By.NAME , findName)
     return findedn
@@ -44,6 +41,8 @@ def findName(findName):
 def clickName(findn):
     findedName=findName(findn)
     findedName.click()
+
+
 
 find="Rating-Review"
 clickID(find)
@@ -69,7 +68,12 @@ clickID(find)
 #clickXpath(findx)
 #findx="//div[text()='Kişisel verilerimin işlenmesine yönelik']"
 #clickXpath(findx)
-
+findx="//span[text()='Üye Ol']"
+clickXpath(findx)
 
 
 time.sleep(60)
+
+
+
+
